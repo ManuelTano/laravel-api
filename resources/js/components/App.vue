@@ -1,19 +1,27 @@
 <template>
-  <div class="content">
-    <div class="title m-b-md">{{ title }}</div>
-  </div>
+    <div class="content">
+        <MyHeader :title="title" />
+        <main class="container mt-3">
+            <PostList />
+        </main>
+    </div>
 </template>
-
 <script>
+import MyHeader from "./MyHeader.vue";
+import PostList from "./posts/PostList.vue";
 export default {
-  name: "App",
-  data() {
-    return {
-        title: "Coming soon..",
-    };
-  },
+    name: "App",
+    components: {
+        MyHeader,
+        PostList,
+    },
+    data() {
+        return {
+            title: "Boolpress",
+        };
+    },
 };
 </script>
 
-<style scoped>
+<style>
 </style>
