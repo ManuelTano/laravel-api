@@ -2,18 +2,18 @@
     <div class="content">
         <MyHeader :title="title" />
         <main class="container mt-3">
-            <PostList />
+            <Homepage />
         </main>
     </div>
 </template>
 <script>
 import MyHeader from "./MyHeader.vue";
-import PostList from "./posts/PostList.vue";
+import HomePage from "./pages/HomePage.vue";
 export default {
     name: "App",
     components: {
         MyHeader,
-        PostList,
+        HomePage,
     },
     data() {
         return {
