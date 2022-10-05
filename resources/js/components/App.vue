@@ -2,7 +2,7 @@
     <div class="content">
         <MyHeader :title="title" />
         <main class="container mt-3">
-            <HomePage />
+            <router-view> </router-view>
         </main>
     </div>
 </template>
