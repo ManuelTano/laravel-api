@@ -8,12 +8,10 @@
 </template>
 <script>
 import MyHeader from "./MyHeader.vue";
-import HomePage from "./pages/HomePage.vue";
 export default {
     name: "App",
     components: {
         MyHeader,
-        HomePage,
     },
     data() {
         return {
@@ -24,4 +22,5 @@ export default {
 </script>
 
 <style>
+
 </style>
