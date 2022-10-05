@@ -18,7 +18,7 @@
 import AppLoader from "../AppLoader.vue";
 import PostCard from "./PostCard.vue";
 export default {
-  name: "PostsList",
+  name: "PostList",
   data() {
     return {
       posts: [],

@@ -11,11 +11,19 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarNav">
-        <div class="navbar-nav">
-          <li class="nav-item active">
-                <a class="nav-link" href="#">Home</a>
-            </li>
-        </div>
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <router-link class="nav-link" to="/">Home</router-link>
+          </li>
+
+          <li class="nav-item">
+            <router-link class="nav-link" to="/contacts">Contacts</router-link>
+          </li>
+
+          <li class="nav-item">
+            <router-link class="nav-link" to="/about">About</router-link>
+          </li>
+        </ul>
       </div>
     </nav>
   </header>
@@ -23,13 +31,12 @@
 
 <script>
 export default {
-    name: "MyHeader",
-    props: {
-        title: String,
-    }
-}
+  name: "MyHeader",
+  props: {
+    title: String,
+  },
+};
 </script>
 
 <style>
-
 </style>

@@ -2,7 +2,7 @@
     <div class="content">
         <MyHeader :title="title" />
         <main class="container mt-3">
-            <Homepage />
+            <HomePage />
         </main>
     </div>
 </template>
