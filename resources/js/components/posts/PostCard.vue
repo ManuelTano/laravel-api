@@ -10,6 +10,11 @@
             <p>
                 {{ post.content }}
             </p>
+            <router-link
+                :to="{ name: 'post-detail', params: { id: post.id } }"
+                class="btn btn-primary btn-sm "
+                ><i class="fa-solid fa-eye mr-2"></i> Vedi</router-link
+            >
         </div>
     </div>
 </template>
